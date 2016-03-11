@@ -1,0 +1,14 @@
+<template name="projects">
+<div class="column">
+	<h2>Professional Projects:</h2>
+	(For detailed list please look on <a href="pl.linkedin.com/pub/wojciech-piotrowiak/27/a35/422">Linkedin</a>)
+	{{#each professionalProjects}}
+  	{{> projectTemplate}}
+	{{/each}}
+	<br><br>
+	<h2>Other Projects:</h2>
+	{{#each otherProjects}}
+  	{{> projectTemplate}}
+	{{/each}}
+</div>
+</template>

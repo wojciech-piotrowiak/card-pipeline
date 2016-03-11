@@ -1,0 +1,75 @@
+<template name="diy">
+<div class="column">
+	<p> After hours is like to spend time on vinemaking, diy with wood, electronics or fixing my car. </p>
+
+	<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<div id="links">
+    <a href="img/gallery/vine1.jpg" title="Vine #1" data-gallery="">
+        <img src="img/gallery/vine1.jpg" alt="Vine #1" class="galleryThumbnail">
+    </a>
+    <a href="img/gallery/vine2.jpg" title="Vine #2" data-gallery="">
+        <img src="img/gallery/vine2.jpg" alt="Vine #2" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/car.jpg" title="Fixing car" data-gallery="">
+        <img src="img/gallery/car.jpg" alt="Fixing car" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/wood1.jpg" title="Wood work" data-gallery="">
+        <img src="img/gallery/wood1.jpg" alt="Wood work" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/wood2.jpg" title="Wood work" data-gallery="">
+        <img src="img/gallery/wood2.jpg" alt="Wood work" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/wood3.jpg" title="Wood work" data-gallery="">
+        <img src="img/gallery/wood3.jpg" alt="Wood work" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/imadlo.jpg" title="Wood work" data-gallery="">
+        <img src="img/gallery/imadlo.jpg" alt="Wood work" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/shelf1.jpg" title="Vine shelf #1" data-gallery="">
+        <img src="img/gallery/shelf1.jpg" alt="Vine shelf #1" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/shelf2.jpg" title="Vine shelf #2" data-gallery="">
+        <img src="img/gallery/shelf2.jpg" alt="Vine shelf #2" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/lamp.jpg" title="USB Lamp" data-gallery="">
+        <img src="img/gallery/lamp.jpg" alt="USB Lamp" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/mixer1.jpg" title="Audio mixer for guitar and computer" data-gallery="">
+        <img src="img/gallery/mixer1.jpg" alt="Audio mixer for guitar and computer" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/mixerReady.jpg" title="Audio mixer for guitar and computer" data-gallery="">
+        <img src="img/gallery/mixerReady.jpg" alt="Audio mixer for guitar and computer" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/almostDone.jpg" title="Audio mixer for guitar and computer" data-gallery="">
+        <img src="img/gallery/almostDone.jpg" alt="Audio mixer for guitar and computer" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/arduino1.jpg" title="Arduino projects" data-gallery="">
+        <img src="img/gallery/arduino1.jpg" alt="Arduino projects" class="galleryThumbnail">
+    </a>
+		<a href="img/gallery/arduino2.jpg" title="Arduino projects" data-gallery="">
+				<img src="img/gallery/arduino2.jpg" alt="Arduino projects" class="galleryThumbnail">
+		</a>
+</div>
+<br>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+</div>
+</template>

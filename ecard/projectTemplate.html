@@ -1,0 +1,15 @@
+<template name="projectTemplate">
+  <p>
+    <h3>{{projectName}}</h3>
+    <p>{{comment}}</p>
+    <p>
+    Technologies:
+    {{#each technologies}}
+    	{{> techTag}}
+  	{{/each}}
+    </p>
+  </p>
+</template>
+<template name="techTag">
+  <span class="label label-info">{{techName}}</span>
+</template>
