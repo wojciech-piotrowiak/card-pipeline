@@ -14,6 +14,16 @@ if (Meteor.isClient) {
     ]
   });
 
+  Template.contact.rendered = function () {
+    $('#mail').click(function(){
+      var x1="wojciech.";
+      var x2="piotrowiak";
+      var x3="@";
+      var x4="gmail.com";
+      alert(x1+x2+x3+x4);
+    });
+  };
+
 }
 
 if (Meteor.isServer) {
