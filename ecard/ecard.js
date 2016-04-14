@@ -20,7 +20,7 @@ if (Meteor.isClient) {
       var x2="piotrowiak";
       var x3="@";
       var x4="gmail.com";
-      alert(x1+x2+x3+x4);
+      $('#mail').text(x1+x2+x3+x4);
     });
   };
 
