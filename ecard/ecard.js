@@ -1,5 +1,5 @@
 if (Meteor.isClient) {
-  Template.projects.helpers({
+  Template.experience.helpers({
     professionalProjects: [
       {projectName: "Backoffice",comment:"Developing web based framework for Data Management (cockpit NG) and backoffice module with ZK, hybris platform, spring etc. Scrum master activities.",technologies:[{techName:"Java"},{techName:"Spring Framework"},{techName:"ZK Framework"}]},
       {projectName: "Presales demos",comment:"Prepared more than 60 PoC of hybris platform, developing in Java, spring, ZK,JS, jsp, etc.Cooperation with third companies and clients.",technologies:[{techName:"Java"},{techName:"Spring Framework"}]},

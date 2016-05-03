@@ -13,6 +13,10 @@ Router.route('/contact', function () {
 Router.route('/projects', function () {
  this.render('projects', {to: 'internal'});
  } );
+
+Router.route('/experience', function () {
+ this.render('experience', {to: 'internal'});
+ } );
  
  Router.route('/diy', function () {
  this.render('diy', {to: 'internal'});

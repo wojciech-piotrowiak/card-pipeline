@@ -1,14 +1,11 @@
 <template name="projects">
 <div class="column">
-	<h2>Professional Projects:</h2>
-	(For detailed list please look on <a href="pl.linkedin.com/pub/wojciech-piotrowiak/27/a35/422">Linkedin</a>)
-	{{#each professionalProjects}}
-  	{{> projectTemplate}}
-	{{/each}}
+	<h3>Open Source Projects:</h3>
+	<h2>Disk filler </h2><img src="https://api.travis-ci.org/wojciech-piotrowiak/disc_filler.svg?branch=master"> 
+	<a href="https://github.com/wojciech-piotrowiak/disc_filler">GitHub Link</a>
+	<p>Program that allows to fill any disk with data. It might help to prevent from data recovery.<br>
+	Default feature it to fill disk completely, however it's possible to define custom data size and length of file.
+	It's command line tool written in Java.</p>
 	<br><br>
-	<h2>Other Projects:</h2>
-	{{#each otherProjects}}
-  	{{> projectTemplate}}
-	{{/each}}
 </div>
 </template>
