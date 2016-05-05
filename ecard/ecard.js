@@ -1,6 +1,7 @@
 if (Meteor.isClient) {
   Template.experience.helpers({
     professionalProjects: [
+      {projectName: "Client Attributes Matrix",comment:"Backend system that holds master data about clients and their products",technologies:[{techName:"Java"},{techName:"Cassandra"},{techName:"Maven"},{techName:"Spring Framework"}]},
       {projectName: "Backoffice",comment:"Developing web based framework for Data Management (cockpit NG) and backoffice module with ZK, hybris platform, spring etc. Scrum master activities.",technologies:[{techName:"Java"},{techName:"Spring Framework"},{techName:"ZK Framework"}]},
       {projectName: "Presales demos",comment:"Prepared more than 60 PoC of hybris platform, developing in Java, spring, ZK,JS, jsp, etc.Cooperation with third companies and clients.",technologies:[{techName:"Java"},{techName:"Spring Framework"}]},
       {projectName: "Facebook app 'Capitol Momentum'",comment:"Facebook Application that was utilized on the US market. The application allows for contacting Federal, State and Local politicians by leveraging Facebook platform. This platform has attracted variety of large non-profit organizations with global reach (such as Habitat for Humanity) and variety of American Universities. Application currently disabled",technologies:[{techName:"Java"},{techName:"Spring Framework"},{techName:"Hibernate"},{techName:"JEE"},{techName:"TDD"}]},
